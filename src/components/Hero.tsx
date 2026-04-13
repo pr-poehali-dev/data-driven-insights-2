@@ -56,11 +56,11 @@ export default function Hero() {
 
         <div className="relative z-10 flex flex-col items-center gap-4 sm:gap-6 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[90%] tracking-[-0.03em] text-black mix-blend-exclusion max-w-2xl">
-            Ускорьте ваш маркетинг
+            Совершенствование онлайн-продаж
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4">
-            Дайте вашей команде свободу творить, а не настраивать. Создавайте, запускайте и масштабируйте цифровые продукты с уверенностью и скоростью.
+            Персонализация, умные рекомендации и поддержка решений — три шага к росту конверсии и выручки в вашем интернет-магазине.
           </p>
 
           <AnimatePresence initial={false}>
@@ -133,64 +133,51 @@ export default function Hero() {
               >
                 <div className="flex-1 flex flex-col justify-center space-y-3 w-full">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-none tracking-[-0.03em]">
-                    Связаться с нами
+                    Ожидаемые результаты совершенствования процесса онлайн-продаж
                   </h2>
 
-                  <div className="space-y-4 sm:space-y-6 pt-4">
-                    <div className="flex gap-3 sm:gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 flex items-center justify-center">
-                        <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Узнайте, как FlowPulse может трансформировать ваш бизнес с индивидуальными решениями и гибкими тарифами.
-                        </p>
+                  <div className="space-y-0 pt-4">
+                    {/* Level 1 */}
+                    <div className="rounded-xl bg-white/10 p-4 sm:p-5">
+                      <p className="text-[10px] font-mono uppercase tracking-[0.5px] text-white/60 mb-3">Изменения в процессе</p>
+                      <div className="flex flex-wrap gap-2">
+                        {["Персонализация", "Рекомендации", "Поддержка решения"].map((item) => (
+                          <span key={item} className="px-3 py-1 rounded-full bg-white/15 text-white text-sm">{item}</span>
+                        ))}
                       </div>
                     </div>
-                    <div className="flex gap-3 sm:gap-4">
-                      <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 flex items-center justify-center">
-                        <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M13 10V3L4 14h7v7l9-11h-7z"
-                          />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Убедитесь лично, как платформа FlowPulse ускоряет разработку и приносит результаты.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20">
-                    <p className="text-lg sm:text-xl lg:text-2xl text-white leading-[150%] mb-4">
-                      FlowPulse позволяет нашей команде работать быстрее и выпускать продукты с уверенностью.
-                    </p>
-                    <div className="flex items-center gap-3 sm:gap-4">
-                      <img
-                        src="https://cdn.poehali.dev/templates/fluid-cta-ru/anna-avatar.jpg"
-                        alt="Анна Смирнова"
-                        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
-                      />
-                      <div>
-                        <p className="text-base sm:text-lg lg:text-xl text-white">Анна Смирнова</p>
-                        <p className="text-sm sm:text-base text-white/70">Директор по маркетингу, TechVision</p>
+                    {/* Arrow */}
+                    <div className="flex justify-center py-2">
+                      <svg className="w-5 h-5 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    {/* Level 2 */}
+                    <div className="rounded-xl bg-white/15 p-4 sm:p-5">
+                      <p className="text-[10px] font-mono uppercase tracking-[0.5px] text-white/60 mb-3">Промежуточные эффекты</p>
+                      <div className="flex flex-wrap gap-2">
+                        {["Снижение неуверенности", "Сокращение отказов", "Рост вовлечённости"].map((item) => (
+                          <span key={item} className="px-3 py-1 rounded-full bg-white/15 text-white text-sm">{item}</span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Arrow */}
+                    <div className="flex justify-center py-2">
+                      <svg className="w-5 h-5 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+
+                    {/* Level 3 */}
+                    <div className="rounded-xl bg-white/20 p-4 sm:p-5">
+                      <p className="text-[10px] font-mono uppercase tracking-[0.5px] text-white/60 mb-3">Бизнес-результаты</p>
+                      <div className="flex flex-wrap gap-2">
+                        {["Меньше брошенных корзин", "Рост конверсии", "Увеличение выручки", "Лучший клиентский опыт"].map((item) => (
+                          <span key={item} className="px-3 py-1 rounded-full bg-white/20 text-white text-sm font-medium">{item}</span>
+                        ))}
                       </div>
                     </div>
                   </div>
